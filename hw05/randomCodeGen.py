@@ -18,7 +18,7 @@ ConstRest -> ε | , Const ConstRest
 ~
 StmList -> ε | Stm \\n StmList
 ~
-Stm -> { StmList } | if ( Exp ) \\n Stm \\n else \\n Stm | if ( Exp ) \\n Stm | while ( Exp ) \\n Stm | while ( Exp ) \\n ; | Exp = Exp ;  | Exp [ ] = { ExpList } ;  | return Exp ;  | putnum ( Exp ) ; | putch ( Exp ) ; | putarray ( Exp , Exp ) ; | starttime ( ) ; | stoptime ( ) ;
+Stm -> { StmList } | if ( Exp ) \\n Stm \\n else \\n Stm | if ( Exp ) \\n Stm | while ( Exp ) \\n Stm | while ( Exp ) \\n ; | Exp = Exp ;  | Exp [ ] = { ExpList } ;  | continue ; | break ; | return Exp ;  | putnum ( Exp ) ; | putch ( Exp ) ; | putarray ( Exp , Exp ) ; | starttime ( ) ; | stoptime ( ) ;
 ~
 Exp -> NUM | true | false | length ( Exp ) | getnum ( ) | getch ( ) | getarray ( Exp ) | id | new int [ Exp ] | new float [ Exp ] | Exp op Exp | ! Exp | - Exp | ( Exp ) | ( { StmList } Exp ) | Exp [ Exp ]
 ~
