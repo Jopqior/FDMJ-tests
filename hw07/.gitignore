@@ -1,0 +1,5 @@
+yours/*.irp
+correct/*.irp
+test/myRandomTest*.fmj
+test/*.src
+test/*.ast
