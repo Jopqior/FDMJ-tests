@@ -20,6 +20,12 @@
 		- `INFO=1` 输出
 	- 通过 `CLEAN_RANDOM=1` 删除随机测试的`.fmj`文件
 
+## 注
+1. `randomCodeGen.py` 不考虑 `arr` 和 `class` 的随机测试
+2. 通过调节 `randomCodeGen.py` 中的 `EMPTY_RATE` 和 `EMPTY_RATE_INC` 可以调节空语句的生成概率
+3. 通过调节 `randomCodeGen.py` 中的 `EXP_MAX_DEPTH` 可以调节表达式的最大深度
+4. `check.py` 会对输出进行严格检查，其中为避免输出信息过多，每个文件只输出前3个不匹配的行信息
+
 ```shell
 # 默认 RANDOM=0 CHECK=check.py INFO=0
 make test_external
