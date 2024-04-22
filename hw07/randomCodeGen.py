@@ -1,6 +1,7 @@
 import random
 import os
 from enum import Enum
+from typing import Optional
 
 ID_MAX_LENGTH = 10
 NUM_MAX = 114514
@@ -20,6 +21,9 @@ class VarType(Enum):
     # INT_ARRAY = 2
     # FLOAT_ARRAY = 3
     # CLASS = 4
+
+    def __init__(self, class_name: Optional[str] = None):
+        self.class_name = class_name
 
     def __str__(self) -> str:
         if self == VarType.INT:
