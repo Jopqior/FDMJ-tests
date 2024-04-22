@@ -36,6 +36,7 @@ for file in matching_files:
         else:
             passed_prints.append("== passed {} ==".format(file.split('/')[2]))
     else:
+        diff_lines = diff_lines[:3]
         failed_msg = "!! failed {} !!".format(file.split('/')[2]) + "\n\t" + \
                      "different line(s): " + ", ".join([str(ln) for ln, _, _ in diff_lines]) + "\n" + \
                      "\n".join([f"\tLine {ln}: \n\tYou: '{y}' \n\tRef: '{c}'" for ln, y, c in diff_lines])
