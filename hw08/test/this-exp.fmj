@@ -1,0 +1,8 @@
+public int main() {}
+
+public class c1 {
+    int a;
+    public int m() {
+        return this.a;
+    }
+}

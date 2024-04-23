@@ -1,0 +1,11 @@
+public int main() {
+    class c1 a;
+    a = new c2().m();
+}
+
+public class c1 {}
+public class c2 extends c1 {
+    public class c1 m() {
+        return new c2();
+    }
+}

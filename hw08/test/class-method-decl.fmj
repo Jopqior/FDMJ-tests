@@ -1,0 +1,12 @@
+public int main() {}
+
+public class A {
+    public int m1() {}
+    public float m2() {}
+    public int m3(int a, float b, int[] c, int[] d) {}
+    public class A m4(class A a) {}
+}
+
+public class B extends A {
+    public int m1() {}
+}

@@ -1,0 +1,16 @@
+public int main() {
+    class c2 c;
+    class c2 a;
+    c.a = 1.2;
+    c.b = 1.3;
+    c.c = a;
+}
+
+public class c1 {
+    int a;
+}
+
+public class c2 extends c1 {
+    int b;
+    class c1 c;
+}

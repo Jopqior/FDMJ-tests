@@ -1,0 +1,11 @@
+public int main() {
+    int x;
+    class c1 c;
+    x = c.m(1.2, 2.3, new int[23]);
+}
+
+public class c1 {
+    public int m(int a, float b, int[] c) {
+        return a + b + c[0];
+    }
+}
