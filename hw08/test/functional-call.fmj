@@ -1,0 +1,10 @@
+public int main() {
+    class A a;
+    a.m1().m2().m3().m2().m1().m2().m3();
+}
+
+public class A {
+    public class A m1() {}
+    public class A m2() {}
+    public class A m3() {}
+}

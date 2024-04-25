@@ -1,5 +1,0 @@
-public int main() {
-    float a;
-    float[] b;
-    a = getarray(new int[2]);
-}

@@ -45,7 +45,7 @@ for file in matching_files:
         else:
             passed_prints.append("== passed {} ==".format(file.split("/")[2]))
     else:
-        diff_lines = diff_lines[:3]
+        diff_lines = diff_lines[:5]
         failed_msg = (
             "!! failed {} !!".format(file.split("/")[2])
             + "\n\t"
