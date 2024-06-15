@@ -1,0 +1,6 @@
+
+public int main() {
+  float[] b={1,2};
+  putarray(2, b);
+  return b[0];
+}
