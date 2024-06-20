@@ -1,0 +1,14 @@
+yours/*.txt
+correct/*.txt
+test/myRandomTest*.fmj
+tools/main
+tools/std
+test/*.irp
+test/*.stm
+test/*.ins
+test/*.cfg
+test/*.ssa
+test/*.ll
+test/*.arm
+test/*.s
+test/*.ig
